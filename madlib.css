@@ -1,0 +1,36 @@
+
+
+body {
+  background-color: orange;
+font-family:  'Teko', sans-serif;
+font-size:25px;
+}
+.container {
+  width: 500px;
+  margin: 90px auto;	
+justify-content: center;
+}
+.red-button {
+  font-family: 'Poppins', sans-serif;
+  color: orange;
+  font-weight: bold;
+  font-size: 26px;
+  text-decoration: none;
+  background-color: #ff3c38;
+  padding: 24px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 3px;
+}
+
+.red-button:hover {
+  background-color: #ff6f59;
+}
+
+#output{
+  justify-content: center;
+  text-align: center;
+  padding: 75px;
+}
+
+

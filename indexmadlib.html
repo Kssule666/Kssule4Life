@@ -1,0 +1,54 @@
+<html>
+  <head>
+    <title>Madlibs</title>
+   <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="madlib.css">	<link href="https://fonts.googleapis.com/css?family=Almarai&display=swap" rel="stylesheet">
+  </head>
+  	<body>
+  	
+	  	<div class="container">
+		    <h1>Abonne-toi ici à la Bible Biblique!</h1>
+		    <form>
+		    <div>
+		  		<label for="country">Pays:</label>
+		  		<input type="text" id="country" placeholder=" R.D.C">
+		  	</div>
+		  		<label for="character">Mon grade religieux:</label>
+		  		<input type="text" id="character" placeholder="Gueu">
+		  	<div>
+		  		<label for="Age">Age:</label>
+		  		<input type="text" id="age" placeholder="666">
+		  	</div>
+		  		<label for="note">Note du ton cassoulet sur 27:</label>
+		  		<input type="note" id="note" placeholder="6ix">
+		  	<div>
+		  		<label for="sexe">Sexe:</label>
+		  		<input type="sexe" id="sexe" placeholder="non-binaire">
+			</div>
+			<input type="button" id="submit" value="Soumettre au conseil" class="red-button">
+ 
+			</form> 
+		</div>
+		<div id="output"></div>
+		<script>
+  function createStory() {
+    const country = document.getElementById('country');
+    const character = document.getElementById('character');
+    const age = document.getElementById('age');
+    const note = document.getElementById('note');
+    const sexe = document.getElementById('sexe');
+    const output = document.getElementById('output');
+
+    const story = `Bonjour! Merci d'avoir soumis votre formulaire au Conseil Suprême de Kssuleisme! Vous venez bien du pays suivant: ${country.value}, vous êtes donc agé(e) de ${age.value} anneés et vous appartenez donc au sexe ${sexe.value}. On peut aussi remarquer que vous êtes au grade de ${character.value}. Si mes contactes disent vrai, votre cassoulet fut coté à une note totale de ${note.value}. Le Conseil passera en revue votre demande pour rejoindre notre culte sacré. On se remettra en contact avec vous si on accepte votre demande. Longue vie au Cassoulet Suprême.` 
+    console.log(story);
+    output.innerHTML = story;
+  };
+
+  
+
+  const submitButton = document.getElementById("submit");
+  submitButton.addEventListener("click", createStory);
+</script>
+
+	</body>
+  </html> 
