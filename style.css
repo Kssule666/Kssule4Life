@@ -1,0 +1,44 @@
+img {
+  border-radius: 8px;
+  align-content: center;
+}
+
+h1 {
+  font-size: 100px;
+  font-family: 'Anton', sans-serif;
+  color: black;
+  text-align: center;
+}
+
+#titre {
+  margin: 20px 15vw;
+}
+
+#cassoulet-image {
+  width: 600px;
+  margin: 10px auto;
+}
+
+button {
+  font-size: 60px;
+  text-align: center;
+  margin: auto 50vw;
+  color: black;
+}
+
+body{
+  background-color: orange ;
+  font-size: 33px;
+  text-align: center;
+
+}
+
+p {
+  font-family: 'Teko', sans-serif;
+}
+
+a {
+  color: black;
+   font-size: 60px;
+  font-family: 'Roboto Mono', monospace;
+}
